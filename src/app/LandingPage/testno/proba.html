@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:height="http://www.w3.org/1999/xhtml">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    <title>Naslov</title>
+</head>
+      <style>
+        .btn {
+          background: #3498db;
+          background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+          background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+          background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+          background-image: -o-linear-gradient(top, #3498db, #2980b9);
+          background-image: linear-gradient(to bottom, #3498db, #2980b9);
+          -webkit-border-radius: 28;
+          -moz-border-radius: 28;
+          border-radius: 28px;
+          font-family: Georgia;
+          color: #fff200;
+          font-size: 20px;
+          padding: 10px 20px 10px 20px;
+          text-decoration: none;
+        }
+
+        .btn:hover {
+          background: #3cb0fd;
+          background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+          background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+          background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+          background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+          background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+          text-decoration: none;
+        }
+
+          #testnbtn {{
+          background: #3498db;
+          background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+          background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+          background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+          background-image: -o-linear-gradient(top, #3498db, #2980b9);
+          background-image: linear-gradient(to bottom, #3498db, #2980b9);
+          -webkit-border-radius: 28;
+          -moz-border-radius: 28;
+          border-radius: 28px;
+          font-family: Georgia;
+          color: #fff200;
+          font-size: 20px;
+          padding: 10px 20px 10px 20px;
+          text-decoration: none;
+        }
+        }
+        #map {
+          height: 100%;
+        }
+        html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+
+      </style>
+<body>
+
+  <button class="btn">Pozdravljen</button>
+<input type="button" id=""testnbtn" value="Search"/>
+
+
+  <div id="map"></div>
+
+
+  <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 46.0546, lng: 14.5762},
+        zoom: 13
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAD3KEIRYefdX5gS5uS_6EF67qrG_bdjA&callback=initMap"
+          async defer></script>
+  <script>function getLocation(callback) {
+  if (navigator.geolocation) {
+  var lat_lng = navigator.geolocation.getCurrentPosition(function(position){
+  console.log(position);
+  var user_position = {};
+  user_position.lat = position.coords.latitude;
+  user_position.lng = position.coords.longitude;
+  callback(user_position);
+  });
+  } else {
+  alert("Geolocation is not supported by this browser.");
+  }
+  }
+  getLocation(function(lat_lng){
+  console.log(lat_lng);
+  });
+</script>
+</body>
+      </html>
