@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>LEgEndE</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -10,20 +10,18 @@
 
 
 
-<style>#demo {
-/* TO MAMO RESPONSIVE  background-color: blue; */
-
-}
+<style>
 
 /* overwride bg color */
 .navbar-inverse{
 
-background-color: lime !important;
+background-color: yellow !important;
+
 
 }
 html, body {
-  padding-top: 12%; /*za navbar not over body */
-  padding-bottom: 2%; /*change so that footer doesnt cover over body text */
+  padding-top: 0;
+  padding-bottom: 0;
 }
 #futr {
   position: fixed;
@@ -31,7 +29,7 @@ html, body {
   bottom: 0;
   width: 100%;
   padding-bottom: 10px;
-  background-color: #00ff00;
+  background-color: #00af00;
   text-align: center;
 }</style></head>
 <body>
@@ -53,8 +51,9 @@ html, body {
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pizze<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Mesne</a></li>
-            <li><a href="#">Za idiote</a></li>
+            <li><a href="#">Sirne</a></li>
             <li><a href="#">Morske</a></li>
+
           </ul>
         </li>
         <li><a href="#">Grill'd</a></li>
@@ -69,102 +68,52 @@ html, body {
 </nav>
 
 
+<div class="jumbotron">
+  <h1>Dobrodošli doma</h1>
+  <p>Leta in leta tradicije, znanja in veselja vse v enem</p>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+          <div class="col-sm-12" style=" background-color: pink;">
+
+  <p>This is some text.</p>
+<p>This is another text.</p>
+    </div>
+  </div>
+</div>
+
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-4" style=" background-color: red;">
 
-      <h3>Nerealne pice</h3> <p>Resno</p>
+      <h3>Pice</h3> <p>Tople, slastne</p>
+      <button id="buton" onclick="funk()"> Pritisni</button>
+                                   <p id="demo"></p>
+
     </div>
     <div class="col-sm-4" style=" background-color: blue;">
       <h4>Grill'd</h4>
     </div>
-    <div class="col-sm-4" style=" background-color: #00ff00;"><h5>#Baked</h5><p>ekrpqjpjfqfq</p></div>
+    <div class="col-sm-4" style=" background-color: #ce6bff;"><h5>#Baked</h5><p>ekrpqjpjfqfq</p></div>
 
     <br>
   </div>
-  <h3>Budalija</h3>
-  <p>NErEalno </p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p> imspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspumimspum</p>
-  <p>Konc</p>
+  <h5>Lorem</h5>
+  <p>Ipsum </p>
+
 </div>
+
 <div id="futr">
   <div class="container">
-  <p>B(U)Y LEgEnde</p></div>
+  <p>By LEgEnde</p></div>
 </div>
+
+<script>
+function funk() {
+
+    document.getElementById("demo").innerHTML = "Hello World";}
+
+</script>
 </body>
 </html>
