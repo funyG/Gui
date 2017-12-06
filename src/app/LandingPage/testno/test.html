@@ -11,7 +11,11 @@
 
 
 <style>
+.jumbotron {
+  text-align: center;
 
+
+}
 .navbar-inverse{
 
 background-color: yellow !important;
@@ -31,7 +35,13 @@ html, body {
   padding-bottom: 10px;
   background-color: #00af00;
   text-align: center;
-}</style></head>
+}
+
+#legende {
+  font-size: 50px;
+  background-color: blue;
+
+</style></head>
 <body>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -42,11 +52,11 @@ html, body {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">LEgEndE</a>
+      <a id="legende" class="navbar-brand" href="#">LEgEndE</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">DOmOv</a></li>
+        <li class="active"><a href="#">Domov</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pizze<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -75,11 +85,25 @@ html, body {
 
 <div class="container-fluid">
   <div class="row">
-          <div class="col-sm-12" style=" background-color: pink;">
+          <div class="col-sm-4" style=" background-color: pink;">
 
-  <p>This is some text.</p>
-<p>This is another text.</p>
-    </div>
+           <p>Osnovni text</p>
+
+          </div>
+
+
+          <div class="col-sm-4" style=" background-color: greenyellow;">
+            <p>še več in več njega</p>
+
+          </div>
+
+
+
+            <div class="col-sm-4" style=" background-color: blueviolet;">
+               <p>Pa še več in še več in več njega</p>
+
+            </div>
+
   </div>
 </div>
 
@@ -95,20 +119,48 @@ html, body {
     <div class="col-sm-4" style=" background-color: blue;">
       <h4>Grill'd</h4>
     </div>
-    <div class="col-sm-4" style=" background-color: #ce6bff;"><h5>#Baked</h5><p>ekrpqjpjfqfq</p></div>
+    <div class="col-sm-4" style=" background-color: #ce6bff;"><h5>#Baked</h5><p>ekrpqjpjfqfq
 
-    <br>
+    </p>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
   </div>
-  <h5>Lorem</h5>
-  <p>Ipsum </p>
+
 
 </div>
 
-<div id="futr">
-  <div class="container">
-  <p>By LEgEnde</p></div>
-</div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="futr" class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <p>Text znotraj footerja</p>
+    </div>
+</div>
 <script>
 function funk() {
 
